@@ -1,0 +1,24 @@
+{
+  "name": "homebridge-insteon",
+  "version": "0.0.1",
+  "description": "Insteon Hub plugin for homebridge: https://github.com/nfarina/homebridge",
+  "license": "MIT",
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/biscuitehh/homebridge-insteon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/biscuitehh/homebridge-insteon/issues"
+  },
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0"
+  },
+  "dependencies": {
+    "insteon-api": "^1.0.0",
+    "request": "^2.65.0"
+  }
+}
