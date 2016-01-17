@@ -6,6 +6,7 @@
 //         "platform": "Insteon",
 //         "name": "Insteon Hub",
 //         "ip_address": "127.0.0.1"
+//         "api_token": "the_api_token_issued_by_insteon_dot_com"
 //     }
 // ],
 //
@@ -36,10 +37,9 @@ module.exports = function(homebridge) {
   homebridge.registerPlatform("homebridge-insteon", "Insteon", InsteonPlaftorm);
 }
 
-
-function InsteonPlaftorm(log, config) {
+function InsteonPlatform(log, config) {
   this.log = log;
   this.ip_address = config["ip_address"];
-
+  this.api_token = config["api_token"];
   this.log("Insteon Hub Plugin Version " + this.getVersion());
 }
